@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  origin:
+    build: .
+    ports:
+    - "2352:2352/tcp"
+    # environment:

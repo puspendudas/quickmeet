@@ -152,7 +152,32 @@ mymuteicon.style.visibility = 'hidden';
 let myvideooff = document.querySelector("#myvideooff");
 myvideooff.style.visibility = 'hidden';
 
-const configuration = { iceServers: [{ urls: "stun:stun.stunprotocol.org" }] }
+// const configuration = { iceServers: [{ urls: "stun:stun.l.google.com:19302" }] }
+
+const configuration = {
+  iceServers: [
+    { urls: "stun:stun.l.google.com:19302" },
+    { urls: "stun:stun1.l.google.com:19302" },
+    { urls: "stun:stun2.l.google.com:19302" },
+    { urls: "stun:stun3.l.google.com:19302" },
+    { urls: "stun:stun4.l.google.com:19302" },
+    { urls: "stun:stun01.sipphone.com" },
+    { urls: "stun:stun.ekiga.net" },
+    { urls: "stun:stun.fwdnet.net" },
+    { urls: "stun:stun.ideasip.com" },
+    { urls: "stun:stun.iptel.org" },
+    { urls: "stun:stun.rixtelecom.se" },
+    { urls: "stun:stun.schlund.de" },
+    { urls: "stun:stunserver.org" },
+    { urls: "stun:stun.softjoys.com" },
+    { urls: "stun:stun.voiparound.com" },
+    { urls: "stun:stun.voipbuster.com" },
+    { urls: "stun:stun.voipstunt.com" },
+    { urls: "stun:stun.voxgratia.org" },
+    { urls: "stun:stun.xten.com" }
+  ]
+}
+
 
 const mediaConstraints = { video: true, audio: true };
 

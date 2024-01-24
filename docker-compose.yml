@@ -6,3 +6,11 @@ services:
     ports:
     - "2352:2352/tcp"
     # environment:
+    networks:
+      myipvlan:
+        ipv4_address: 192.168.0.4
+
+networks:
+  myipvlan:
+    external: true
+    name: br0
